@@ -279,6 +279,56 @@
 
             <div class="section">
                 <h4>Our ABM Approach</h4>
+                <div class="mermaid">
+                    graph TD
+    subgraph VP/CEO Track
+        A[LinkedIn Engagement + Connection <br/> VP/CEO]
+        B[Light Intro Strategic]
+        C[Cold Email #1 Strategic Value]
+        D[Gift &rarr; Cold Email #2 ROI Sheet]
+        E[Direct Phone Call CSO]
+        F[Call to Action Exec Meeting]
+        G[BOOKED &ndash; VP/CEO]
+
+        A -- ACCEPTED --> B
+        A -- NOT RESPONDED --> C
+
+        B -- RESPONDED --> F
+        B -- Unanswered --> C
+
+        C -- NOT RESPONDED --> D
+
+        D -- NOT RESPONDED --> E
+        D -- POSITIVE --> G
+
+        E -- POSITIVE --> G
+        E -- Introduces to VP/CEO --> G
+
+        F -- POSITIVE --> G
+    end
+
+    subgraph Purchasing / Project Track
+        H[LinkedIn Engagement + Connection <br/> Purchasing/PM]
+        I[Light Intro <br/> Process/Implementation]
+        J[Cold Email #1 Operational Angle]
+        K[Case Study / ROI One-pager]
+        L[Call to Action Manager Meeting]
+        M[BOOKED &ndash; Manager Champion]
+
+        H -- ACCEPTED --> I
+        H -- NOT RESPONDED --> J
+
+        I -- RESPONDED --> L
+
+        J -- RESPONDED --> K
+        J -- NOT RESPONDED --> L
+
+        K -- POSITIVE --> L
+
+        L --> M
+        M -- Introduces to VP/CEO --> G
+    end
+                </div>
                 <ul>
                     <li><strong>Target Scope:</strong> Up to 100 accounts per month, with a six-month campaign reaching 600 top accounts.</li>
                     <li><strong>Dual-track engagement:</strong>
